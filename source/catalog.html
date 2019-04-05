@@ -6,107 +6,122 @@
   </head>
   <body>
                                 <!--ШАПКА-->
-    <header class="header">
-      <div class="header__wrapper">
-        <a class="header__logo" href="index.html">
-          <img class="header__logo-image" src="#" alt="Логотип магазина «Мишка»" width="86px" height="35px">
+    <header class="page-header">
+      <div class="logo-toggle__inner">
+        <a class="page-header__logo logo" href="index.html">
+          <img class="logo__image" src="#" alt="Логотип магазина «Мишка»" width="86px" height="35px">
         </a>
-        <button class="header__button" type="button">Открыть меню</button>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
       </div>
 
-      <nav class="header-nav">
-        <ul class="header-nav__list site-list">
-          <li class="site-list__item">
-            <a>Каталог товаров</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="site-list__item site-list__item--search">
-            <a href="#">Поиск по сайту</a>
-          </li>
-          <li class="site-list__item site-list__item--basket">
-            <a href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header-nav-inner">
+        <nav class="header-nav">
+          <ul class="header-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item site-list__item--search">
+              <a class="site-list__link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item site-list__item--basket">
+              <a class="site-list__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
                                     <!--ОСНОВНОЕ СОДЕРЖАНИЕ-->
-    <main class="main">
-      <h1 class="main__header">Каталог товаров</h1>
+    <main class="page-content">
 
-      <section class="goods">
-        <ul class="goods__list">
-          <!--1 товар-->
-          <li class="goods__item">
-            <a class="goods__link" href="#">
-              <img class="goods__image" src="#" alt="Зайчик-попрыгайчик" width="260px" height="195px">
-              <h3 class="goods__title">
-                Зайчик-попрыгайчик
-              </h3>
-            </a>
+      <div class="promo-inner">
+        <h1 class="promo-header promo-header--inner">
+          Каталог товаров
+        </h1>
+      </div>
 
-            <p class="goods__description goods__description--line">
-              Рост 30 см, вес 200 г
-            </p>
+      <div class="goods-inner">
+        <section class="goods">
+          <ul class="goods__list">
 
-            <div class="price-and-basket">
-              <p class="price-and-basket__price">
-                1 200 руб.
+            <!--1 товар-->
+            <li class="goods__item">
+              <a class="goods__link" href="#">
+                <img class="goods__image" src="#" alt="Зайчик-попрыгайчик" width="260px" height="195px">
+                <h2 class="goods__title">
+                  Зайчик-попрыгайчик
+                </h2>
+              </a>
+
+              <p class="goods__description goods__description--line">
+                Рост 30 см, вес 200 г
               </p>
-              <button class="price-and-basket__basket" type="button" aria-label="Добавить в корзину">
-                <!--svg-->
-              </button>
-            </div>
-          </li>
-          <!--2 товар-->
-          <li class="goods__item">
-            <a class="goods__link" href="#">
-              <img class="goods__image" src="#" alt="Корзинка для белья" width="260px" height="195px">
-              <h3 class="goods__title">Корзинка для белья</h3>
-            </a>
 
-            <p class="goods__description goods__description--line">
-              Диаметр 15 см, высота 10 см
-            </p>
+              <div class="price-and-basket">
+                <p class="price-and-basket__price">
+                  1 200 руб.
+                </p>
+                <button class="price-and-basket__basket" type="button" aria-label="Добавить в корзину">
+                  <!--svg-->
+                </button>
+              </div>
+            </li>
 
-            <div class="price-and-basket">
-              <p class="price-and-basket__price">
-                690 руб.
+            <!--2 товар-->
+            <li class="goods__item">
+              <a class="goods__link" href="#">
+                <img class="goods__image" src="#" alt="Корзинка для белья" width="260px" height="195px">
+                <h2 class="goods__title">
+                  Корзинка для белья
+                </h2>
+              </a>
+
+              <p class="goods__description goods__description--line">
+                Диаметр 15 см, высота 10 см
               </p>
-              <button class="price-and-basket__basket" type="button" aria-label="Добавить в корзину">
-                <!--svg-->
-              </button>
-            </div>
-          </li>
-          <!--3 товар-->
-          <li class="goods__item">
-            <a class="goods__link" href="#">
-              <img class="goods__image" src="#" alt="Большая корзинка для игрушек" width="260px" height="195px">
-              <h3 class="goods__title">
-                Большая корзинка для игрушек
-              </h3>
-            </a>
 
-            <p class="goods__description goods__description--line">
-              Диаметр 30 см, высота 30 см
-            </p>
+              <div class="price-and-basket">
+                <p class="price-and-basket__price">
+                  690 руб.
+                </p>
+                <button class="price-and-basket__basket" type="button" aria-label="Добавить в корзину">
+                  <!--svg-->
+                </button>
+              </div>
+            </li>
 
-            <div class="price-and-basket">
-              <p class="price-and-basket__price">
-                1 500 руб.
+            <!--3 товар-->
+            <li class="goods__item">
+              <a class="goods__link" href="#">
+                <img class="goods__image" src="#" alt="Большая корзинка для игрушек" width="260px" height="195px">
+                <h2 class="goods__title">
+                  Большая корзинка для игрушек
+                </h2>
+              </a>
+
+              <p class="goods__description goods__description--line">
+                Диаметр 30 см, высота 30 см
               </p>
-              <button class="price-and-basket__basket" type="button" aria-label="Добавить в корзину">
-                <!--svg-->
-              </button>
-            </div>
-          </li>
-        </ul>
-      </section>
+
+              <div class="price-and-basket">
+                <p class="price-and-basket__price">
+                  1 500 руб.
+                </p>
+                <button class="price-and-basket__basket" type="button" aria-label="Добавить в корзину">
+                  <!--svg-->
+                </button>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
                                     <!--ПОДВАЛ-->
-    <footer class="footer">
-      <div class="footer__social footer__social--line social">
+    <footer class="page-footer">
+
+      <div class="social-networks social-networks--line social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link" href="#" aria-label="Мишка в Instagram">

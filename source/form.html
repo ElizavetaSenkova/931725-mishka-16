@@ -6,36 +6,39 @@
   </head>
   <body>
                                       <!--ШАПКА-->
-    <header class="header">
-      <div class="header__wrapper">
-        <a class="header__logo" href="index.html">
-          <img class="header__logo-image" src="#" alt="Логотип магазина «Мишка»" width="86px" height="35px">
+    <header class="page-header">
+      <div class="logo-toggle__inner">
+        <a class="page-header__logo logo" href="index.html">
+          <img class="logo__image" src="#" alt="Логотип магазина «Мишка»" width="86px" height="35px">
         </a>
-        <button class="header__button" type="button">Открыть меню</button>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
       </div>
 
-      <nav class="header-nav">
-        <ul class="header-nav__list site-list">
-          <li class="site-list__item">
-            <a href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="site-list__item">
-            <a>Вязание на заказ</a>
-          </li>
-          <li class="site-list__item site-list__item--search">
-            <a href="#">Поиск по сайту</a>
-          </li>
-          <li class="site-list__item site-list__item--basket">
-            <a href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header-nav-inner">
+        <nav class="header-nav">
+          <ul class="header-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item site-list__item--search">
+              <a class="site-list__link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item site-list__item--basket">
+              <a class="site-list__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
                               <!--ОСНОВНОЕ СОДЕРЖАНИЕ-->
 
                               <!--ПОДВАЛ-->
-    <footer class="footer">
-      <div class="footer__social footer__social--line social">
+    <footer class="page-footer">
+
+      <div class="social-networks social-networks--line social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link" href="#" aria-label="Мишка в Instagram">
