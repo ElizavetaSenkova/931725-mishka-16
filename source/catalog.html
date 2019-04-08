@@ -3,15 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
                                 <!--ШАПКА-->
     <header class="page-header">
-      <div class="logo-toggle__inner">
-        <a class="page-header__logo logo" href="index.html">
-          <img class="logo__image" src="#" alt="Логотип магазина «Мишка»" width="86px" height="35px">
-        </a>
-        <button class="page-header__toggle" type="button">Открыть меню</button>
+
+      <div class="header-top-inner">
+        <div class="header-top">
+          <a class="header-top__logo logo" href="index.html">
+            <img class="logo__image" src="#" alt="Логотип магазина «Мишка»" width="86px" height="35px">
+          </a>
+          <button class="header-top__toggle" type="button">Открыть меню</button>
+        </div>
       </div>
 
       <div class="header-nav-inner">
@@ -37,9 +41,11 @@
     <main class="page-content">
 
       <div class="promo-inner">
-        <h1 class="promo-header promo-header--inner">
-          Каталог товаров
-        </h1>
+        <div class="promo promo--inner">
+          <h1 class="promo__catalog-header">
+            Каталог товаров
+          </h1>
+        </div>
       </div>
 
       <div class="goods-inner">
