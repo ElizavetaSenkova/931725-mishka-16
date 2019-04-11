@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
                                 <!--ШАПКА-->
     <header class="page-header">
-      <div class="logo-toggle__inner">
-        <a class="page-header__logo logo" href="index.html">
+
+      <div class="header-top container">
+        <a class="header-top__logo logo" href="index.html">
           <img class="logo__image" src="#" alt="Логотип магазина «Мишка»" width="86px" height="35px">
         </a>
-        <button class="page-header__toggle" type="button">Открыть меню</button>
+        <button class="header-top__toggle" type="button">Открыть меню</button>
       </div>
 
-      <div class="header-nav-inner">
-        <nav class="header-nav">
+      <nav class="header-nav">
+        <div class="header-nav__inner container">
           <ul class="header-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link">Каталог товаров</a>
@@ -30,20 +32,23 @@
               <a class="site-list__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
+
     </header>
                                     <!--ОСНОВНОЕ СОДЕРЖАНИЕ-->
     <main class="page-content">
 
-      <div class="promo-inner">
-        <h1 class="promo-header promo-header--inner">
-          Каталог товаров
-        </h1>
+      <div class="promo">
+        <div class="promo__title-inner container">
+          <h1 class="promo__title promo__title--catalog">
+            Каталог товаров
+          </h1>
+        </div>
       </div>
 
-      <div class="goods-inner">
-        <section class="goods">
+      <section class="goods">
+        <div class="goods__inner container">
           <ul class="goods__list">
 
             <!--1 товар-->
@@ -115,40 +120,43 @@
               </div>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
                                     <!--ПОДВАЛ-->
     <footer class="page-footer">
+      <div class="page-footer__inner container">
 
-      <div class="social-networks social-networks--line social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link" href="#" aria-label="Мишка в Instagram">
-              <span class="visually-hidden">Instagram</span>
-              <!--svg-->
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#" aria-label="Мишка на Facebook">
-              <span class="visually-hidden">Facebook</span>
-              <!--svg-->
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#" aria-label="Мишка в Twitter">
-              <span class="visually-hidden">Twitter</span>
-              <!--svg-->
-            </a>
-          </li>
-        </ul>
-      </div>
+        <div class="social-networks social-networks--line social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Мишка в Instagram">
+                <span class="visually-hidden">Instagram</span>
+                <!--svg-->
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Мишка на Facebook">
+                <span class="visually-hidden">Facebook</span>
+                <!--svg-->
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Мишка в Twitter">
+                <span class="visually-hidden">Twitter</span>
+                <!--svg-->
+              </a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="developed">
-        <p class="developed__text">Разработано</p>
-        <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
-          <!--svg-->
-        </a>
+        <div class="developed">
+          <p class="developed__text">Разработано</p>
+          <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+            <!--svg-->
+          </a>
+        </div>
+
       </div>
     </footer>
 
