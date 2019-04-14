@@ -9,31 +9,45 @@
                                 <!--ШАПКА-->
     <header class="page-header">
 
-      <div class="header-top container">
-        <a class="header-top__logo logo" href="index.html">
-          <img class="logo__image" src="#" alt="Логотип магазина «Мишка»" width="86px" height="35px">
-        </a>
-        <button class="header-top__toggle" type="button">Открыть меню</button>
-      </div>
+      <div class="page-header__inner container">
+        <nav class="page-header__nav header-top">
 
-      <nav class="header-nav">
-        <div class="header-nav__inner container">
-          <ul class="header-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link">Каталог товаров</a>
+          <a class="header-top__logo logo" href="index.html">
+            <!--Вставить svg-->
+          </a>
+          <button class="header-top__toggle" type="button">Открыть меню</button>
+
+          <ul class="header-top__list top-list">
+            <li class="top-list__item top-list__item--search">
+              <a class="top-list__link" href="#">Поиск по сайту</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item site-list__item--search">
-              <a class="site-list__link" href="#">Поиск по сайту</a>
-            </li>
-            <li class="site-list__item site-list__item--basket">
-              <a class="site-list__link" href="#">Корзина: пока пуста</a>
+            <li class="top-list__item top-list__item--basket">
+              <a class="top-list__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
-        </div>
-      </nav>
+
+          <ul class="header-top__list bottom-list">
+            <li class="bottom-list__item">
+              <a class="bottom-list__link">Каталог товаров</a>
+            </li>
+            <li class="bottom-list__item">
+              <a class="bottom-list__link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+
+          <p class="header-top__delivery">Бесплатная доставка по России</p>
+
+          <ul class="additional-list">
+            <li class="additional-list__item">
+              <a class="additional-list__link" href="#">Новые поступления</a>
+            </li>
+            <li class="additional-list__item">
+              <a class="additional-list__link" href="#">Распродажа</a>
+            </li>
+          </ul>
+
+        </nav>
+      </div>
 
     </header>
                                     <!--ОСНОВНОЕ СОДЕРЖАНИЕ-->

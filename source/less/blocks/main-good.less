@@ -1,6 +1,9 @@
+.main-good__inner {
+  padding-top: 31px;
+}
+
 .main-good__title {
   margin: 0;
-  padding-top: 31px;
 
   font-size: 25px;
   line-height: 30px;
@@ -52,4 +55,29 @@
   color: #444444;
 
   border: 2px solid #444444;
+}
+
+@media (min-width: @tablet-width) {
+  .main-good__title-inner {
+    display: flex;
+  }
+
+  .main-good__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .main-good__week {
+    font-size: 17px;
+    line-height: 17px;
+  }
+
+  .main-good__description {
+    width: 284px;
+    margin-right: auto;
+  }
+
+  .main-good__order {
+    width: 290px;
+  }
 }
