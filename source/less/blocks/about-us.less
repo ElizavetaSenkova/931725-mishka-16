@@ -4,6 +4,7 @@
 }
 
 .about-us__title {
+  padding-bottom: 84px;
   margin: 0;
 
   font-size: 25px;
@@ -15,5 +16,38 @@
 }
 
 .about-us__item {
+  padding-bottom: 82px;
+
   line-height: 20px;
+}
+
+.about-us__item--present {
+  padding-bottom: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .about-us__title {
+    padding-bottom: 100px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about-us__common {
+    display: flex;
+  }
+
+  .about-us__list {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-us__title {
+    padding-bottom: 98px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
