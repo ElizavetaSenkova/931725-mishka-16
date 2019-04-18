@@ -1,47 +1,63 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" name="viewport">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
                                         <!--ШАПКА-->
     <header class="page-header">
 
-      <div class="header-top container">
-        <a class="header-top__logo logo">
-          <img class="logo__image" src="#" alt="Логотип магазина «Мишка»" width="86px" height="35px">
-        </a>
-        <button class="header-top__toggle" type="button">Открыть меню</button>
-      </div>
+      <div class="page-header__inner container">
+        <nav class="page-header__nav header-top">
 
-      <nav class="header-nav">
-        <div class="header-nav__inner container">
-          <ul class="header-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+          <a class="header-top__logo logo">
+            <!--Вставить svg-->
+          </a>
+          <button class="header-top__toggle" type="button">Открыть меню</button>
+
+          <ul class="header-top__list top-list">
+            <li class="top-list__item top-list__item--search">
+              <a class="top-list__link" href="#">Поиск по сайту</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item site-list__item--search">
-              <a class="site-list__link" href="#">Поиск по сайту</a>
-            </li>
-            <li class="site-list__item site-list__item--basket">
-              <a class="site-list__link" href="#">Корзина: пока пуста</a>
+            <li class="top-list__item top-list__item--basket">
+              <a class="top-list__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
-        </div>
-      </nav>
+
+          <ul class="header-top__list bottom-list">
+            <li class="bottom-list__item bottom-list__item--catalog">
+              <a class="bottom-list__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="bottom-list__item bottom-list__item--form">
+              <a class="bottom-list__link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+
+          <p class="header-top__delivery">Бесплатная доставка по России</p>
+
+          <ul class="additional-list">
+            <li class="additional-list__item additional-list__item--new-arrival">
+              <a class="additional-list__link" href="#">Новые поступления</a>
+            </li>
+            <li class="additional-list__item">
+              <a class="additional-list__link" href="#">Распродажа</a>
+            </li>
+          </ul>
+
+        </nav>
+      </div>
 
     </header>
                                     <!--ОСНОВНОЕ СОДЕРЖАНИЕ-->
     <main class="page-content">
 
       <div class="promo">
-        <div class="promo__title-index container">
-          <h1 class="promo__title promo__title--index">
+        <div class="promo__inner container">
+          <h1 class="promo__title">
             Милые штуки ручной работы для дома
           </h1>
         </div>
@@ -58,8 +74,12 @@
 
       <section class="main-good">
         <div class="main-good__inner container">
-          <h2 class="main-good__title">Вязаные корзинки</h2>
-          <p class="main-good__week">Товар недели</p>
+
+          <header class="main-good__header">
+            <h2 class="main-good__title">Вязаные корзинки</h2>
+            <p class="main-good__week">Товар недели</p>
+          </header>
+
           <p class="main-good__description">Экологически чистая пряжа,
             ручная работа. Доступны в шести расцветках,
             и трех размерах.</p>
@@ -86,38 +106,51 @@
           <a class="main-good__order main-good__order--zigzag button" href="#">
             Заказать
           </a>
-        </section>
-      </div>
+
+        </div>
+      </section>
 
       <section class="about-us">
         <div class="about-us__inner container">
+
           <h2 class="about-us__title">Коротко о нас:</h2>
-          <ul class="about-us__list">
-            <li class="about-us__item about-us__item--ecology">
-                Экологически чистые материалы
-            </li>
-            <li class="about-us__item about-us__item--price">
-              Скандинавский стиль по российской цене
-            </li>
-            <li class="about-us__item about-us__item--like">
-              Увеличивает лайки на фотографиях
-            </li>
-            <li class="about-us__item about-us__item--knit">
-              Связано вручную с любовью и умилением
-            </li>
-            <li class="about-us__item about-us__item--manufacturer">
-              Поддержка отечественного производителя
-            </li>
-            <li class="about-us__item about-us__item--present">
-              Поставляется в подарочной упаковке
-            </li>
-          </ul>
+
+          <div class="about-us__common">
+            <ul class="about-us__list">
+              <li class="about-us__item about-us__item--ecology">
+                  Экологически чистые материалы
+              </li>
+              <li class="about-us__item about-us__item--price">
+                Скандинавский стиль по российской цене
+              </li>
+              <li class="about-us__item about-us__item--like">
+                Увеличивает лайки на фотографиях
+              </li>
+            </ul>
+
+            <ul class="about-us__list">
+              <li class="about-us__item about-us__item--knit">
+                Связано вручную с любовью и умилением
+              </li>
+              <li class="about-us__item about-us__item--manufacturer">
+                Поддержка отечественного производителя
+              </li>
+              <li class="about-us__item about-us__item--present">
+                Поставляется в подарочной упаковке
+              </li>
+            </ul>
+          </div>
+
         </div>
       </section>
     </main>
                                     <!--ПОДВАЛ-->
     <footer class="page-footer">
       <div class="page-footer__inner container">
+
+        <a class="page-footer__logo" href="index.html">
+          <!--svg-->
+        </a>
 
         <div class="social-networks social-networks--line social">
           <ul class="social__list">
