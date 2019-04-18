@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
                                 <!--ШАПКА-->
-    <header class="page-header">
+    <header class="page-header page-header--inner">
 
       <div class="page-header__inner container">
         <nav class="page-header__nav header-top">
@@ -28,10 +29,10 @@
           </ul>
 
           <ul class="header-top__list bottom-list">
-            <li class="bottom-list__item">
+            <li class="bottom-list__item bottom-list__item--catalog">
               <a class="bottom-list__link">Каталог товаров</a>
             </li>
-            <li class="bottom-list__item">
+            <li class="bottom-list__item bottom-list__item--form">
               <a class="bottom-list__link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
@@ -39,7 +40,7 @@
           <p class="header-top__delivery">Бесплатная доставка по России</p>
 
           <ul class="additional-list">
-            <li class="additional-list__item">
+            <li class="additional-list__item additional-list__item--new-arrival">
               <a class="additional-list__link" href="#">Новые поступления</a>
             </li>
             <li class="additional-list__item">
@@ -54,9 +55,9 @@
                                     <!--ОСНОВНОЕ СОДЕРЖАНИЕ-->
     <main class="page-content">
 
-      <div class="promo">
-        <div class="promo__title-inner container">
-          <h1 class="promo__title promo__title--catalog">
+      <div class="promo-inner">
+        <div class="container">
+          <h1 class="promo-inner__title">
             Каталог товаров
           </h1>
         </div>
