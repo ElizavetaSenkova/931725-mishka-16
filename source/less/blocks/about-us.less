@@ -26,6 +26,11 @@
 }
 
 @media (min-width: @tablet-width) {
+  .about-us__inner {
+    padding-top: 125px;
+    padding-bottom: 0;
+  }
+
   .about-us__title {
     padding-bottom: 100px;
 
@@ -41,13 +46,39 @@
     font-size: 20px;
     line-height: 22px;
   }
+
+  .about-us__top {
+    padding-right: 96px;
+  }
+
+  .about-us__item {
+    padding-bottom: 110px;
+  }
+
+  .about-us__item:last-child {
+    padding-bottom: 80px;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .about-us__inner {
+    padding-top: 164px;
+  }
+
   .about-us__title {
+    margin-left: 175px;
     padding-bottom: 98px;
 
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .about-us__top {
+    margin-left: 175px;
+    padding-right: 115px;
+  }
+
+  .about-us__item:last-child {
+    padding-bottom: 88px;
   }
 }

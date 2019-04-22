@@ -22,7 +22,7 @@
 .main-good__description {
   width: 249px;
   margin: 0;
-  padding-bottom: 27px;
+  margin-bottom: 17px;
 
   font-size: 15px;
   font-weight: normal;
@@ -31,6 +31,8 @@
 }
 
 .main-good__table {
+  margin-bottom: 28px;
+
   font-size: 15px;
   font-weight: normal;
   line-height: 20px;
@@ -45,16 +47,37 @@
   border-bottom: 1px solid @border-gray;
 }
 
+.main-good__value {
+  padding-left: 31px;
+  padding-right: 31px;
+}
+
+.main-good__field,
+.main-good__value {
+  padding-top: 12px;
+  padding-bottom: 10px;
+}
+
+.main-good__image {
+  width: 260px;
+  height: 315px;
+}
+
 .main-good__price {
   margin: 0;
+  padding: 26px 0;
 
+  text-align: center;
   color: #444444;
 }
 
 .button {
   display: inline-block;
   width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
+  font-size: 18px;
   line-height: 20px;
   text-align: center;
   vertical-align: middle;
@@ -64,8 +87,17 @@
   border: 2px solid #444444;
 }
 
+.main-good__order {
+  padding-right: 84px;
+  padding-left: 84px;
+
+  font-size: 17px;
+}
+
 @media (min-width: @tablet-width) {
   .main-good__inner {
+    padding-top: 52px;
+
     position: relative;
   }
 
@@ -75,21 +107,33 @@
   }
 
   .main-good__title {
+    padding-right: 150px;
+
     font-size: 43px;
     line-height: 50px;
   }
 
   .main-good__week {
+    width: 96px;
+    padding-top: 15px;
+    padding-bottom: 0;
+
     font-size: 17px;
     line-height: 17px;
+    text-align: center;
   }
 
   .main-good__description {
     width: 283px;
+    margin-bottom: 0;
     padding-bottom: 44px;
 
     font-size: 17px;
     line-height: 30px;
+  }
+
+  .main-good__table {
+    margin-bottom: 0;
   }
 
   .main-good__image {
@@ -98,16 +142,18 @@
     width: 333px;
     height: 404px;
 
-    top: 130px;
+    top: 153px;
     left: 384px;
   }
 
   .main-good__price {
     padding-top: 54px;
     padding-bottom: 32px;
+    padding-left: 70px;
 
     font-size: 20px;
     line-height: 24px;
+    text-align: start;
   }
 
   .main-good__order {
@@ -116,10 +162,46 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-good__inner {
+    padding-top: 132px;
+  }
+
   .main-good__title {
+    padding-right: 0;
+    padding-left: 56px;
     order: 1;
 
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .main-good__week {
+    width: 120px;
+    padding-left: 45px;
+  }
+
+  .main-good__description {
+    margin-left: 175px;
+    padding-bottom: 54px;
+  }
+
+  .main-good__table {
+    margin-left: 175px;
+  }
+
+  .main-good__image {
+    top: 71px;
+    left: 484px;
+    z-index: -1;
+  }
+
+  .main-good__price {
+    margin-left: 248px;
+    padding-top: 108px;
+    padding-left: 0;
+  }
+
+  .main-good__order {
+    margin-left: 175px;
   }
 }
