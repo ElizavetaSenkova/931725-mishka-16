@@ -1,6 +1,5 @@
 .goods__inner {
   padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 .goods__list {
@@ -9,12 +8,24 @@
 
 .goods__item {
   width: 260px;
+  margin-bottom: 30px;
 
   border: 1px solid @border-gray;
 }
 
+.goods__image {
+  width: 260px;
+  height: 195px;
+}
+
+.goods__content {
+  padding-left: 28px;
+}
+
 .goods__title {
   margin: 0;
+  padding-top: 27px;
+  padding-bottom: 6px;
 
   font-size: inherit;
   line-height: inherit;
@@ -31,10 +42,13 @@
 
 .price-and-basket {
   display: flex;
+  padding-top: 42px;
+  padding-bottom: 25px;
 }
 
 .price-and-basket__price {
   margin: 0;
+  padding-right: 111px;
 
   font-size: 15px;
   line-height: 24px;
@@ -45,9 +59,14 @@
 }
 
 @media (min-width: @tablet-width) {
+  .goods__inner {
+    padding-top: 79px;
+  }
+
   .goods__item {
     display: flex;
     width: 668px;
+    margin-bottom: 54px;
   }
 
   .goods__title {
@@ -59,12 +78,23 @@
     font-size: 15px;
   }
 
+  .price-and-basket {
+    padding-top: 198px;
+  }
+
   .price-and-basket__price {
+    padding-right: 165px;
+
     font-size: 17px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .goods__inner {
+    padding-top: 128px;
+    padding-bottom: 57px;
+  }
+
   .goods__list {
     display: flex;
     flex-wrap: wrap;
@@ -73,5 +103,19 @@
   .goods__item {
     display: block;
     width: 315px;
+    margin-bottom: 0;
+    margin-right: 52.5px;
+  }
+
+  .goods__item:last-child {
+    margin-right: 0;
+  }
+
+  .price-and-basket {
+    padding-top: 61px;
+  }
+
+  .price-and-basket--toys {
+    padding-top: 35px;
   }
 }
