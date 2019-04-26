@@ -6,6 +6,7 @@
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script>
   </head>
   <body>
                                       <!--ШАПКА-->
@@ -15,19 +16,14 @@
         <nav class="page-header__nav header-top">
 
           <a class="header-top__logo logo" href="index.html">
-            <img class="logo__image" src="img/logo-mobile.svg"
-            alt="Логотип магазина «Мишка»" width="86px" height="35px">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="logo__image" src="img/logo-mobile.svg"
+              alt="Логотип магазина «Мишка»" width="86px" height="35px">
+            </picture>
           </a>
           <button class="header-top__toggle" type="button" aria-label="Открыть меню"></button>
-
-          <ul class="header-top__list top-list">
-            <li class="top-list__item top-list__item--search">
-              <a class="top-list__link" href="#">Поиск по сайту</a>
-            </li>
-            <li class="top-list__item top-list__item--basket">
-              <a class="top-list__link" href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
 
           <ul class="header-top__list bottom-list">
             <li class="bottom-list__item bottom-list__item--catalog">
@@ -35,6 +31,15 @@
             </li>
             <li class="bottom-list__item bottom-list__item--form">
               <a class="bottom-list__link">Вязание на заказ</a>
+            </li>
+          </ul>
+
+          <ul class="header-top__list top-list">
+            <li class="top-list__item top-list__item--search">
+              <a class="top-list__link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="top-list__item top-list__item--basket">
+              <a class="top-list__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
 

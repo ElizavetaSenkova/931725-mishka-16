@@ -1,17 +1,24 @@
 .promo {
-  background-color: #fafafa;
+  background-color: @light-gray;
 }
 
 .promo__inner {
   background-image: url("../img/hero-mobile@1x.jpg");
-  background-position: 50% 21%;
+  background-position: center 0;
   background-repeat: no-repeat;
+
+  @media (min-resolution: @retina-dpi),
+    (min-resolution: @retina-dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 575px auto;
+  }
 }
 
 .promo__title {
-  margin: 0;
-  padding-top: 72px;
-  padding-bottom: 118px;
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 87px;
+  padding-bottom: 119px;
 
   font-size: 27px;
   line-height: 30px;
@@ -50,9 +57,23 @@
 }
 
 @media (min-width: @tablet-width) {
+  .promo__inner {
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-position: center 0;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi),
+      (min-resolution: @retina-dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+      background-size: 1150px auto;
+    }
+  }
+
   .promo__title {
-    width: 514px;
+    width: auto;
     margin: 0 auto;
+    padding-top: 155px;
+    padding-bottom: 371px;
 
     font-size: 43px;
     line-height: 50px;
@@ -63,8 +84,6 @@
     width: 668px;
     margin: 0 auto;
     padding: 0;
-
-    background-color: #fafafa;
   }
 
   .menu-list__item {
@@ -83,7 +102,8 @@
 @media (min-width: @desktop-width) {
   .promo__title {
     width: 630px;
-    padding-bottom: 352px;
+    padding-top: 112px;
+    padding-bottom: 354px;
 
     font-size: 53px;
     line-height: 57px;
