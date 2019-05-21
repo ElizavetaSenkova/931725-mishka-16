@@ -1,6 +1,34 @@
+.developed {
+  display: flex;
+
+  position: relative;
+}
+
 .developed__text {
   margin: 0;
+  padding-top: 28px;
+  padding-left: 39px;
 
   font-size: 19px;
   line-height: 18px;
+}
+
+.developed__academy {
+  position: absolute;
+  top: 25px;
+  right: 60px;
+
+  width: 27px;
+  height: 34px;
+}
+
+@media (min-width: @tablet-width) {
+  .developed {
+    margin-left: auto;
+  }
+
+  .developed__text {
+    padding-top: 10px;
+    padding-left: 0;
+  }
 }
