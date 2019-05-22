@@ -55,12 +55,23 @@
   margin: 0;
   padding-right: 111px;
 
+  position: relative;
+
   font-size: 15px;
   line-height: 24px;
 }
 
 .price-and-basket__basket {
   padding: 0;
+
+  position: absolute;
+  right: 59px;
+
+  background-color: white;
+  border: none;
+  svg {
+    opacity: 0.2;
+  }
 }
 
 @media (min-width: @tablet-width) {

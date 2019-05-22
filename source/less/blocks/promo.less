@@ -42,6 +42,8 @@
 }
 
 .menu-list__link {
+  position: relative;
+
   color: #ffffff;
 }
 
@@ -67,6 +69,18 @@
 
 .menu-list__item--toys {
   background-color: #56c3b2;
+}
+
+.menu-list__toys-icon {
+  position: absolute;
+  top: -3px;
+  right: -176px;
+
+  width: 60px;
+  height: 60px;
+
+  fill: #149080;
+  opacity: 0.2;
 }
 
 @media (min-width: @tablet-width) {
@@ -129,5 +143,13 @@
 
   .menu-list__item {
     width: 525px;
+  }
+
+  .menu-list__interior-icon {
+    right: -320px;
+  }
+
+  .menu-list__toys-icon {
+    right: -340px;
   }
 }

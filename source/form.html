@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script>
   </head>
   <body>
@@ -27,7 +27,17 @@
               <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип магазина «Мишка»" width="86px" height="35px">
             </picture>
           </a>
-          <button class="header-top__toggle" type="button" aria-label="Открыть меню"></button>
+          <button class="header-top__toggle-close" type="button" aria-label="Закрыть меню">
+            <svg class="header-top__close-icon" width="21px" height="20px">
+              <use xlink:href="#icon-menu-close"></use>
+            </svg>
+          </button>
+          <button class="header-top__toggle-open" type="button" aria-label="Открыть меню">
+              <svg class="header-top__open-icon" width="20px" height="14px">
+                <use xlink:href="#icon-menu-open"></use>
+              </svg>
+            </button>
+
 
           <ul class="header-top__list bottom-list">
             <li class="bottom-list__item bottom-list__item--catalog">
@@ -39,18 +49,27 @@
           </ul>
 
           <ul class="header-top__list top-list">
+
             <li class="top-list__item top-list__item--search">
               <a class="top-list__link" href="#">
-                <svg class="top-list__search-icon" width="18" height="18">
+                <svg class="top-list__search-icon" width="18px" height="18px">
                   <use xlink:href="#icon-search"></use>
                 </svg>
                 Поиск по сайту
               </a>
             </li>
+
             <li class="top-list__item top-list__item--basket">
-              <a class="top-list__link" href="#">Корзина: пока пуста</a>
+              <a class="top-list__link" href="#">
+                <svg class="top-list__basket-icon" width="21px" height="18px">
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
+                Корзина: пока пуста
+              </a>
             </li>
+
           </ul>
+
 
           <p class="header-top__delivery">Бесплатная доставка по России</p>
 

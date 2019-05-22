@@ -47,12 +47,20 @@
   height: 35px;
 }
 
-.header-top__toggle {
+.header-top__toggle-close,
+.header-top__toggle-open {
   padding: 0;
 
   position: absolute;
+  top: 27px;
+  left: 269px;
 
-  border-bottom: 1px solid @border-gray;
+  background-color: white;
+  border: none;
+}
+
+.header-top__toggle-open {
+  display: none;
 }
 
 .header-top__list {
@@ -175,6 +183,10 @@
   }
 
   .header-top__toggle {
+    display: none;
+  }
+
+  .header-top__toggle-close {
     display: none;
   }
 

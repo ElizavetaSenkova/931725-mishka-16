@@ -6,6 +6,7 @@
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script>
   </head>
   <body>
 
@@ -27,7 +28,17 @@
               <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип магазина «Мишка»" width="86px" height="35px">
             </picture>
           </a>
-          <button class="header-top__toggle" type="button" aria-label="Открыть меню"></button>
+          <button class="header-top__toggle-close" type="button" aria-label="Закрыть меню">
+            <svg class="header-top__close-icon" width="21px" height="20px">
+              <use xlink:href="#icon-menu-close"></use>
+            </svg>
+          </button>
+          <button class="header-top__toggle-open" type="button" aria-label="Открыть меню">
+              <svg class="header-top__open-icon" width="20px" height="14px">
+                <use xlink:href="#icon-menu-open"></use>
+              </svg>
+            </button>
+
 
           <ul class="header-top__list bottom-list">
             <li class="bottom-list__item bottom-list__item--catalog">
@@ -52,7 +63,7 @@
             <li class="top-list__item top-list__item--basket">
               <a class="top-list__link" href="#">
                 <svg class="top-list__basket-icon" width="21px" height="18px">
-                  <use xlink:href="#icon-basket"></use>
+                  <use xlink:href="#icon-cart"></use>
                 </svg>
                 Корзина: пока пуста
               </a>
@@ -96,7 +107,11 @@
             </a>
           </li>
           <li class="menu-list__item menu-list__item--toys">
-            <a class="menu-list__link" href="#">Детские<br> игрушки</a>
+            <a class="menu-list__link" href="#">Детские<br> игрушки
+              <svg class="menu-list__toys-icon" width="60" height="60">
+                <use xlink:href="#icon-toy"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -249,6 +264,12 @@
             <img class="contacts__image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта офиса по адресу г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис
             101" width="322px" height="457px">
           </picture>
+
+          <button class="contacts__map-pointer" type="button">
+            <svg class="contact__pointer-icon" width="67px" height="100px">
+              <use xlink:href="#icon-map-pin"></use>
+            </svg>
+          </button>
 
           <a class="contacts__write button" href="#">Напишите нам</a>
 

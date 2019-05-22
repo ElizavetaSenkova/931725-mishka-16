@@ -18,12 +18,94 @@
 .about-us__item {
   padding-bottom: 82px;
 
+  position: relative;
+
   line-height: 20px;
+  &--ecology::before {
+    content: "";
+
+    position: absolute;
+    top: -54px;
+    left: 6px;
+
+    width: 32px;
+    height: 37px;
+
+    background-image: url("../img/icon-feature-flower.svg");
+  }
+
+  &--price::before {
+    content: "";
+
+    position: absolute;
+    top: -54px;
+    left: 6px;
+
+    width: 47px;
+    height: 27px;
+
+    background-image: url("../img/icon-feature-money.svg");
+  }
+
+  &--like::before {
+    content: "";
+
+    position: absolute;
+    top: -54px;
+    left: 6px;
+
+    width: 34px;
+    height: 27px;
+
+    background-image: url("../img/icon-feature-heart.svg");
+  }
+
+  &--knit::before {
+    content: "";
+
+    position: absolute;
+    top: -54px;
+    left: 6px;
+
+    width: 35px;
+    height: 34px;
+
+    background-image: url("../img/icon-feature-ball.svg");
+  }
+
+  &--manufacturer::before {
+    content: "";
+
+    position: absolute;
+    top: -54px;
+    left: 6px;
+
+    width: 55px;
+    height: 23px;
+
+    background-image: url("../img/icon-feature-rocket.svg");
+  }
+
+  &--present::before {
+    content: "";
+
+    position: absolute;
+    top: -54px;
+    left: 6px;
+
+    width: 33px;
+    height: 32px;
+
+    background-image: url("../img/icon-feature-gift.svg");
+  }
+
 }
 
 .about-us__item--present {
   padding-bottom: 0;
 }
+
+
 
 @media (min-width: @tablet-width) {
   .about-us__inner {
