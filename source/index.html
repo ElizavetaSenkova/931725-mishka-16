@@ -21,24 +21,25 @@
       <div class="page-header__inner container">
         <nav class="page-header__nav header-top">
 
-          <a class="header-top__logo logo">
-            <picture>
-              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип магазина «Мишка»" width="86px" height="35px">
-            </picture>
-          </a>
+            <a class="header-top__logo logo">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип магазина «Мишка»" width="86px" height="35px">
+              </picture>
+            </a>
+
           <button class="header-top__toggle-close" type="button" aria-label="Закрыть меню">
             <svg class="header-top__close-icon" width="21px" height="20px">
               <use xlink:href="#icon-menu-close"></use>
             </svg>
           </button>
+
           <button class="header-top__toggle-open" type="button" aria-label="Открыть меню">
               <svg class="header-top__open-icon" width="20px" height="14px">
                 <use xlink:href="#icon-menu-open"></use>
               </svg>
             </button>
-
 
           <ul class="header-top__list bottom-list">
             <li class="bottom-list__item bottom-list__item--catalog">
@@ -97,7 +98,7 @@
           </h1>
         </div>
 
-        <ul class="promo__menu menu-list container">
+        <ul class="promo__menu menu-list menu-list--fill container">
           <li class="menu-list__item menu-list__item--interior">
             <a class="menu-list__link" href="#">
               <svg class="menu-list__interior-icon" width="40" height="62">
@@ -117,7 +118,7 @@
       </div>
 
       <section class="main-good">
-        <div class="main-good__inner container">
+        <div class="main-good__inner main-good__inner--zigzag container">
 
           <header class="main-good__header">
             <h2 class="main-good__title">Вязаные корзинки</h2>
@@ -155,7 +156,7 @@
 
           <p class="main-good__price">Цена: 990 руб.</p>
 
-          <a class="main-good__order main-good__order--zigzag button" href="#">
+          <a class="main-good__order button" href="#">
             Заказать
           </a>
 
@@ -247,8 +248,8 @@
               </td>
             </tr>
             <tr class="contacts__string">
-              <td class="contacts__field">адрес:</td>
-              <td class="contacts__value">г. Санкт-Петербург,
+              <td class="contacts__field contacts__field--address">адрес:</td>
+              <td class="contacts__value contacts__value--address">г. Санкт-Петербург,
               ул. Большая Конюшенная, д. 19/8, офис 101
               </td>
             </tr>

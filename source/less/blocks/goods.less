@@ -49,23 +49,26 @@
   display: flex;
   padding-top: 42px;
   padding-bottom: 25px;
+
+  position: relative;
 }
 
 .price-and-basket__price {
   margin: 0;
   padding-right: 111px;
 
-  position: relative;
-
   font-size: 15px;
   line-height: 24px;
 }
 
 .price-and-basket__basket {
+  width: 20px;
+  height: 19px;
   padding: 0;
 
   position: absolute;
-  right: 59px;
+  top: 45px;
+  right: 27px;
 
   background-color: white;
   border: none;
@@ -116,6 +119,16 @@
 
     font-size: 17px;
   }
+
+  .price-and-basket__basket {
+    top: 174px;
+    right: 32px;
+  }
+
+  .goods__item:nth-child(1) .price-and-basket__basket,
+  .goods__item:nth-child(2) .price-and-basket__basket {
+    top: 199px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -159,5 +172,14 @@
 
   .price-and-basket--toys {
     padding-top: 36px;
+  }
+
+  .price-and-basket__basket {
+    top: 37px;
+  }
+
+  .goods__item:nth-child(1) .price-and-basket__basket,
+  .goods__item:nth-child(2) .price-and-basket__basket {
+    top: 63px;
   }
 }

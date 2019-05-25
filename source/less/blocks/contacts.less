@@ -13,7 +13,7 @@
 }
 
 .contacts__table {
-  margin-bottom: 530px;
+  margin-bottom: 550px;
 
   font-size: 15px;
   line-height: 30px;
@@ -22,7 +22,18 @@
 }
 
 .contacts__field {
+  width: 73px;
   padding-right: 24px;
+  vertical-align: top;
+}
+
+.contacts__value--address {
+  padding-right: 40px;
+}
+
+.contacts__value--address,
+.contacts__field--address {
+  padding-top: 30px;
 }
 
 .contacts__mail-link {
@@ -36,7 +47,7 @@
   height: 457px;
 
   position: absolute;
-  top: 250px;
+  top: 272px;
   left: 0;
 }
 
@@ -51,19 +62,58 @@
 
 @media (min-width: @tablet-width) {
   .contacts__title {
+    padding-bottom: 40px;
+
+    position: relative;
+
     font-size: 43px;
+    line-height: 50px;
     font-weight: bold;
+    &--flag::after {
+      content: "";
+
+      position: absolute;
+      top: -25px;
+      right: 0;
+
+      width: 47px;
+      height: 81px;
+
+      background-image: url("../img/icon-flag.svg");
+      background-repeat: no-repeat;
+    }
   }
 
   .contacts__table {
      font-size: 17px;
+     tbody {
+       display: flex;
+     }
+  }
+
+  .contacts__string:first-child {
+    margin-right: 48px;
+  }
+
+  .contacts__field {
+    width: 82px;
+  }
+
+  .contacts__value--address,
+  .contacts__field--address {
+    padding-top: 0;
+  }
+
+  .contacts__value--address {
+    width: 238px;
+    padding-right: 0;
   }
 
   .contacts__image {
     width: 768px;
     height: 457px;
 
-    top: 174px;
+    top: 240px;
   }
 
   .contacts__map-pointer {
@@ -79,24 +129,42 @@
 }
 
 @media (min-width: @desktop-width) {
+  .contacts__inner {
+    padding-bottom: 105px;
+  }
+
   .contacts__title {
+    margin-left: 158px;
     padding-top: 81px;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
 
     font-size: 53px;
     line-height: 57px;
     font-weight: bold;
+    &--flag::after {
+      top: 72px;
+      left: -104px;
+    }
   }
 
   .contacts__table {
-    margin-bottom: 136px;
+    margin-bottom: 70px;
+    margin-left: 158px;
+    tbody {
+      display: block;
+    }
+  }
+
+  .contacts__value--address,
+  .contacts__field--address {
+    padding-top: 30px;
   }
 
   .contacts__image {
     width: 525px;
     height: 457px;
     left: 574px;
-    top: 0;
+    top: 10px;
   }
 
   .contacts__map-pointer {
@@ -106,6 +174,7 @@
 
   .contacts__write {
     margin: 0;
+    margin-left: 158px;
   }
 }
 
