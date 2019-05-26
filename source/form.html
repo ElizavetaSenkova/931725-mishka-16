@@ -94,6 +94,103 @@
         Вязание на заказ
       </h1>
 
+      <section class="knitting">
+        <div class="knitting__inner container">
+
+          <p class="knitting__text">
+            Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+          </p>
+
+          <form class="knitting__form" action="https://echo.htmlacademy.ru" method="post">
+
+            <fieldset class="knitting__type">
+              <legend class="knitting__form-title">Тип</legend>
+              <ul>
+                <li>
+                  <input type="radio" name="type" id="type-accessory" value="accessory" checked>
+                  <label for="type-accessory" class="filter-radio">Аксессуар для
+                    интерьера</label>
+                </li>
+                <li>
+                  <input type="radio" name="type" id="type-toy" value="toy">
+                  <label for="type-toy" class="filter-radio">Детская игрушка</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="knitting__color">
+              <legend class="knitting__form-title">Цвет</legend>
+              <ul>
+                <li class="knitting__item">
+                  <input type="checkbox" name="white" id="color-white" checked>
+                  <label for="color-white" class="filter-checkbox">Белый</label>
+                </li>
+                <li class="knitting__item">
+                  <input type="checkbox" name="gray" id="color-gray" checked>
+                  <label for="color-gray" class="filter-checkbox">Серый</label>
+                </li>
+                <li class="knitting__item">
+                  <input type="checkbox" name="tiffani" id="color-tiffani">
+                  <label for="color-tiffani" class="filter-checkbox">«Тиффани»</label>
+                </li>
+                <li class="knitting__item">
+                  <input type="checkbox" name="black" id="color-black">
+                  <label for="color-black" class="filter-checkbox">Черный</label>
+                </li>
+                <li class="knitting__item">
+                  <input type="checkbox" name="pink" id="color-pink">
+                  <label for="color-pink" class="filter-checkbox">Розовый</label>
+                </li>
+                <li class="knitting__item">
+                  <input type="checkbox" name="orange" id="color-orange">
+                  <label for="color-orange" class="filter-checkbox">Оранжевый</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="knitting__personal">
+              <legend class="knitting__form-title">ФИО</legend>
+              <ul>
+                <li class="knitting__item">
+                  <label for="name-field">Имя:</label>
+                  <input type="text" name="name" id="name-field" placeholder="Введите ваше имя*">
+                </li>
+                <li class="knitting__item">
+                  <label for="surname-field">Фамилия:</label>
+                  <input type="text" name="surname" id="surname-field" placeholder="Укажите фамилию*">
+                </li>
+                <li class="knitting__item">
+                  <label for="middle-name-field">Отчество:</label>
+                  <input type="text" name="middle-name" id="middle-name-field" placeholder="Отчество, если желаете">
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="knitting__phone">
+              <legend class="knitting__form-title">тел</legend>
+              <input type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+            </fieldset>
+
+            <fieldset class="knitting__email">
+              <legend class="knitting__form-title">E-mail</legend>
+              <input type="email" name="email" placeholder="Ваш Email*">
+            </fieldset>
+
+            <fieldset class="knitting__addition">
+              <legend class="knitting__form-title">Доп</legend>
+              <textarea name="wishes" rows="7" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </fieldset>
+
+            <div class="knitting__info">
+              <p class="knitting__info-require">*Поля обязательны для заполнения</p>
+              <button class="knitting__info-button button" type="submit">Отправить заказ</button>
+            </div>
+
+          </form>
+
+        </div>
+      </section>
+
     </main>
 
                               <!--ПОДВАЛ-->
