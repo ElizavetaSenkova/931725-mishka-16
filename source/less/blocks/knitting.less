@@ -564,11 +564,16 @@
 
   .knitting__phone,
   .knitting__email {
-    position: relative;
-
     padding-bottom: 0;
 
     background-color: #f1f1f1;
+  }
+
+  .knitting__phone-inner,
+  .knitting__email-inner {
+    width: 700px;
+
+    position: relative;
   }
 
   .knitting__phone {
@@ -581,15 +586,33 @@
   }
 
   .knitting__phone::before {
-    top: 64px;
-    right: 74px;
-    left: unset;
+    display: none;
   }
 
   .knitting__email::before {
-    top: 17px;
-    right: 72px;
+    display: none;
+  }
+
+  .knitting__phone-inner::before,
+  .knitting__email-inner::before {
+    top: 14px;
+    right: 52px;
     left: unset;
+
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 24px;
+    background-image: url(../img/icon-phone.svg);
+    background-repeat: no-repeat;
+    background-color: inherit;
+  }
+
+  .knitting__email-inner::before {
+    width: 32px;
+    height: 28px;
+
+    background-image: url(../img/icon-mail.svg);
   }
 
   .knitting__phone input,
@@ -606,7 +629,7 @@
   }
 
   .knitting__phone .knitting__form-title {
-    top: 64px;
+    top: 16px;
   }
 
   .knitting__email .knitting__form-title {
@@ -637,6 +660,7 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: baseline;
+    width: 768px;
     padding-top: 53px;
     padding-right: 50px;
     padding-left: 50px;
@@ -652,5 +676,98 @@
   .knitting__info-button {
     width: 230px;
     margin-right: auto;
+  }
+
+  @media (min-width: @desktop-width)  {
+    .knitting__inner {
+      padding-top: 123px;
+    }
+
+    .knitting__text {
+      width: 900px;
+      padding-left: 225px;
+    }
+
+    // knitting__type
+
+    .knitting__type .knitting__form-title {
+      padding-left: 60px;
+    }
+    
+    .knitting__type li {
+      margin-left: 255px;
+    }
+
+    // knitting__color
+
+    .knitting__color .knitting__form-title {
+      left: 108px;
+    }
+
+    .knitting__color .knitting__item {
+      margin-left: 255px;
+    }
+
+    // knitting__personal
+
+    .knitting__personal .knitting__form-title {
+      padding-left: 60px;
+    }
+
+    .knitting__personal .knitting__item {
+      margin-left: 178px;
+    }
+
+    .knitting__personal input[name=name] {
+      width: 626px;
+    }
+
+    .knitting__personal input[name=middle-name], 
+    .knitting__personal input[name=surname] {
+      width: 573px;
+    }
+
+    // knitting__phone
+    // knitting__email
+
+    .knitting__email .knitting__form-title,
+    .knitting__phone .knitting__form-title {
+      left: 60px;
+    }
+
+    .knitting__email input,
+    .knitting__phone input {
+      width: 700px;
+      margin-left: 175px;
+    }
+
+    .knitting__email-inner::before, 
+    .knitting__phone-inner::before {
+      right: -166px;
+    }
+
+    // knitting__addition
+
+    .knitting__addition .knitting__form-title {
+      left: 108px;
+    }
+
+    .knitting__addition textarea {
+      width: 700px;
+      margin-left: 175px;
+    }
+
+    .knitting__info-require {
+      margin-right: 175px;
+    }
+
+    .knitting__info-button {
+      margin-left: 175px;
+    }
+
+    .knitting__info {
+      width: 1150px;
+    }
+
   }
 }
