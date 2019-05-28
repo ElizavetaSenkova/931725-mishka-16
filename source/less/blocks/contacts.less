@@ -7,13 +7,17 @@
 .contacts__title {
   margin: 0;
   padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
 
   font-size: 18px;
   line-height: 30px;
 }
 
 .contacts__table {
-  margin-bottom: 550px;
+  padding-bottom: 35px;
+  padding-right: 30px;
+  padding-left: 30px;
 
   font-size: 15px;
   line-height: 30px;
@@ -23,7 +27,6 @@
 
 .contacts__field {
   width: 73px;
-  padding-right: 24px;
   vertical-align: top;
 }
 
@@ -42,27 +45,38 @@
   border-bottom: 1px solid #63d1bb;
 }
 
+.contacts__image-map {
+  padding-bottom: 39px;
+
+  position: relative;
+}
+
+.contacts__image-map iframe {
+  width: 100%;
+}
+
 .contacts__image {
   width: 322px;
   height: 457px;
 
   position: absolute;
-  top: 272px;
+  top: 0;
   left: 0;
+  z-index: -1;
 }
 
-.contacts__map-pointer {
-  position: absolute;
-  top: 390px;
-  left: 127px;
+.contacts__write {
+  width: 260px;
 
-  background-color: inherit;
-  border: none;
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
 @media (min-width: @tablet-width) {
   .contacts__title {
     padding-bottom: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
 
     position: relative;
 
@@ -75,7 +89,7 @@
 
       position: absolute;
       top: -25px;
-      right: 0;
+      right: 55px;
 
       width: 47px;
       height: 81px;
@@ -86,6 +100,10 @@
   }
 
   .contacts__table {
+    padding-bottom: 54px;
+    padding-right: 50px;
+    padding-left: 50px;
+
     font-size: 17px;
 
     tbody {
@@ -111,20 +129,21 @@
     padding-right: 0;
   }
 
+  .contacts__image-map {
+    width: 768px;
+    height: 457px;
+    margin-bottom: 55px;
+  }
+
   .contacts__image {
     width: 768px;
     height: 457px;
-
-    top: 240px;
-  }
-
-  .contacts__map-pointer {
-    top: 317px;
-    left: 350px;
   }
 
   .contacts__write {
     display: block;
+    margin-right: 50px;
+    margin-left: 50px;
     width: 230px;
     margin: 0 auto;
   }
@@ -146,12 +165,12 @@
 
     &--flag::after {
       top: 72px;
-      left: -104px;
+      left: -44px;
     }
   }
 
   .contacts__table {
-    margin-bottom: 70px;
+    margin-bottom: 18px;
     margin-left: 158px;
 
     tbody {
@@ -164,20 +183,22 @@
     padding-top: 30px;
   }
 
+  .contacts__image-map {
+    width: 525px;
+    height: 457px;
+
+    position: absolute;
+    top: 20px;
+    right: 50px;
+  }
+
   .contacts__image {
     width: 525px;
     height: 457px;
-    left: 574px;
-    top: 10px;
-  }
-
-  .contacts__map-pointer {
-    top: 144px;
-    left: 803px;
   }
 
   .contacts__write {
     margin: 0;
-    margin-left: 158px;
+    margin-left: 225px;
   }
 }

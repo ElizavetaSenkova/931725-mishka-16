@@ -236,7 +236,7 @@
       </section>
 
       <section class="contacts">
-        <div class="contacts__inner container">
+        <div class="contacts__inner">
 
           <h2 class="contacts__title contacts__title--flag">Контакты</h2>
 
@@ -255,22 +255,21 @@
             </tr>
           </table>
 
-          <picture>
-            <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+          <div class="contacts__image-map">
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
 
-            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-            <img class="contacts__image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта офиса по адресу г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис
-            101" width="322px" height="457px">
-          </picture>
+              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <img class="contacts__image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта офиса по адресу г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис
+              101" width="322px" height="457px">
+            </picture>
 
-          <button class="contacts__map-pointer" type="button">
-            <svg class="contact__pointer-icon" width="67px" height="100px">
-              <use xlink:href="#icon-map-pin"></use>
-            </svg>
-          </button>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3010607603485!2d30.32273795647618!3d59.93874412025947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1559041462750!5m2!1sru!2sru" width="322px" height="457px" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+          </div>
 
           <a class="contacts__write button" href="#">Напишите нам</a>
 
