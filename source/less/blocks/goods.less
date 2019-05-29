@@ -11,6 +11,16 @@
   margin-bottom: 30px;
 }
 
+.goods__item:hover .goods__content,
+.video-good__card:hover {
+  box-shadow: 0px 5px 10px #ececec;
+}
+
+.goods__item:active .goods__content,
+.video-good__card:active {
+  box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
 .goods__link-img {
   display: block;
   height: 195px;
@@ -34,6 +44,14 @@
 
   font-size: inherit;
   line-height: inherit;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .goods__description {

@@ -5,7 +5,8 @@
 }
 
 .contacts__title {
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
   padding-bottom: 30px;
   padding-right: 30px;
   padding-left: 30px;
@@ -15,6 +16,8 @@
 }
 
 .contacts__table {
+  width: 320px;
+  margin: 0 auto;
   padding-bottom: 35px;
   padding-right: 30px;
   padding-left: 30px;
@@ -43,9 +46,19 @@
   color: #444444;
 
   border-bottom: 1px solid #63d1bb;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__image-map {
+  width: 320px;
+  margin: 0 auto;
   padding-bottom: 39px;
 
   position: relative;
@@ -66,14 +79,15 @@
 }
 
 .contacts__write {
+  display: block;
   width: 260px;
 
-  margin-right: 30px;
-  margin-left: 30px;
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
   .contacts__title {
+    width: 768px;
     padding-bottom: 40px;
     padding-right: 50px;
     padding-left: 50px;
@@ -100,6 +114,7 @@
   }
 
   .contacts__table {
+    width: 768px;
     padding-bottom: 54px;
     padding-right: 50px;
     padding-left: 50px;
@@ -141,23 +156,25 @@
   }
 
   .contacts__write {
-    display: block;
-    margin-right: 50px;
-    margin-left: 50px;
     width: 230px;
-    margin: 0 auto;
   }
 }
 
 @media (min-width: @desktop-width) {
   .contacts__inner {
+    width: 1150px;
+    margin: 0 auto;
+    padding-right: 50px;
+    padding-left: 50px;
     padding-bottom: 105px;
   }
 
   .contacts__title {
-    margin-left: 158px;
+    margin-left: 175px;
     padding-top: 81px;
     padding-bottom: 50px;
+    padding-right: 0;
+    padding-left: 0;
 
     font-size: 53px;
     line-height: 57px;
@@ -165,22 +182,32 @@
 
     &--flag::after {
       top: 72px;
-      left: -44px;
+      left: -104px;
     }
   }
 
   .contacts__table {
     margin-bottom: 18px;
-    margin-left: 158px;
+    margin-left: 175px;
+    padding-right: 0;
+    padding-left: 0;
 
     tbody {
       display: block;
     }
   }
 
+  .contacts__field {
+    width: 70px;
+  }
+
   .contacts__value--address,
   .contacts__field--address {
     padding-top: 30px;
+  }
+
+  .contacts__value--address {
+    padding-right: 34px;
   }
 
   .contacts__image-map {
@@ -199,6 +226,6 @@
 
   .contacts__write {
     margin: 0;
-    margin-left: 225px;
+    margin-left: 175px;
   }
 }

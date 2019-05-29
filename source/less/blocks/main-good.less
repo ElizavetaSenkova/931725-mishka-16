@@ -101,7 +101,12 @@
   text-transform: uppercase;
   color: #444444;
 
-  border: 2px solid #444444;
+  border: 2px solid @font-color;
+
+  &:hover{
+    color: white;
+    background-color: @font-color;
+  }
 }
 
 .main-good__order {
@@ -112,6 +117,16 @@
   font-weight: bold;
 
   background-color: inherit;
+
+  &:hover {
+    color: white;
+
+    background-color: @font-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -130,12 +145,11 @@
 
   .main-good__header {
     display: flex;
+    justify-content: space-between;
     padding-bottom: 45px;
   }
 
   .main-good__title {
-    padding-right: 150px;
-
     font-size: 43px;
     line-height: 50px;
   }
@@ -174,7 +188,7 @@
   }
 
   .main-good__price {
-    padding-top: 54px;
+    padding-top: 46px;
     padding-bottom: 32px;
     padding-left: 70px;
 
@@ -190,7 +204,7 @@
 
 @media (min-width: @desktop-width) {
   .main-good__inner {
-    padding-top: 132px;
+    padding-top: 118px;
 
     &--zigzag::after {
       width: 1052px;
@@ -199,6 +213,10 @@
       left: 50px;
       bottom: -102px;
     }
+  }
+
+  .main-good__header {
+    justify-content: unset;
   }
 
   .main-good__title {
@@ -235,7 +253,7 @@
 
   .main-good__price {
     margin-left: 248px;
-    padding-top: 108px;
+    padding-top: 100px;
     padding-left: 0;
   }
 

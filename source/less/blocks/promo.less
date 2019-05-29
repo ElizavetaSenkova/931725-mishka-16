@@ -52,16 +52,15 @@
   color: #ffffff;
 }
 
+.menu-list__item:hover {
+  transform: translateY(-5px);
+}
+
 .menu-list__item--interior .menu-list__link {
   background-color: #63d1bb;
 
   &:hover {
-    padding-top: 5px;
     background-color: #59d5bc;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 }
 
@@ -79,6 +78,9 @@
 
 .menu-list__item--toys {
   background-color: #56c3b2;
+  &:hover {
+    background-color: #46c1ae;
+  }
 }
 
 .menu-list__toys-icon {
@@ -161,7 +163,7 @@
   .promo::after {
     height: 34px;
 
-    bottom: -19px;
+    bottom: -16px;
 
     background-size: 100% 34px;
   }

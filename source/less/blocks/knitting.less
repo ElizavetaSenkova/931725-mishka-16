@@ -1,3 +1,8 @@
+.knitting {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .knitting__inner {
   margin: 0 auto;
   padding-right: 30px;
@@ -99,6 +104,15 @@
   border: 2px solid @font-color;
 }
 
+.knitting__form input[type="radio"]:hover + label::before {
+  border: 2px solid @sea-blue;
+}
+
+.knitting__form input[type="radio"]:active + label::before {
+  border: 2px solid @font-color;
+  opacity: 0.3;
+}
+
 .knitting__form input[type="radio"]:checked + label::after {
   content: "";
 
@@ -147,6 +161,15 @@
   border: 2px solid @font-color;
 }
 
+.knitting__form input[type="checkbox"]:hover + label::before{
+  border: 2px solid @sea-blue;
+}
+
+.knitting__form input[type="checkbox"]:active + label::before{
+  border: 2px solid @font-color;
+  opacity: 0.3;
+}
+
 .knitting__form input[type="checkbox"]:checked + label::after {
   content: "";
 
@@ -166,9 +189,24 @@
 .knitting__phone input,
 .knitting__email input {
   width: 260px;
+  padding-left: 17px;
 
   border: none;
   border-bottom: 2px solid black;
+  outline: none;
+}
+
+.knitting__personal input:hover,
+.knitting__phone input:hover,
+.knitting__email input:hover {
+  border-bottom: 2px solid @sea-blue;
+}
+
+.knitting__personal input:active,
+.knitting__phone input:active,
+.knitting__email input:active {
+  border-bottom: 2px solid @sea-blue;
+  outline: none;
 }
 
 .knitting__personal {
@@ -219,36 +257,24 @@
 }
 
 .knitting__form textarea::-webkit-input-placeholder {
-  padding-top: 14px;
-  padding-left: 17px;
-
   font-size: 17px;
   line-height: 18px;
   color: rgba(68, 68, 68, 0.3);
 }
 
 .knitting__form textarea::-moz-placeholder {
-  padding-top: 14px;
-  padding-left: 17px;
-
   font-size: 17px;
   line-height: 18px;
   color: rgba(68, 68, 68, 0.3);
 }
 
 .knitting__form textarea:-moz-placeholder {
-  padding-top: 14px;
-  padding-left: 17px;
-
   font-size: 17px;
   line-height: 18px;
   color: rgba(68, 68, 68, 0.3);
 }
 
 .knitting__form textarea:-ms-input-placeholder {
-  padding-top: 14px;
-  padding-left: 17px;
-
   font-size: 17px;
   line-height: 18px;
   color: rgba(68, 68, 68, 0.3);
@@ -314,8 +340,18 @@
 
 .knitting__addition textarea {
   width: 260px;
+  padding-top: 17px;
+  padding-left: 17px;
 
   border: 2px solid @font-color;
+
+  &:hover {
+    border: 2px solid @sea-blue;
+  }
+
+  &:active {
+    border: 2px solid @sea-blue;
+  }
 }
 
 .knitting__info-require {
@@ -338,6 +374,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .knitting {
+    width: 768px;
+  }
+
   .knitting__inner {
     padding-top: 74px;
     padding-right: 0;
@@ -522,36 +562,24 @@
   }
 
   .knitting__form textarea::-webkit-input-placeholder {
-    padding-top: 17px;
-    padding-left: 17px;
-
     font-size: 19px;
     line-height: 18px;
     color: rgba(68, 68, 68, 0.3);
   }
 
   .knitting__form textarea::-moz-placeholder {
-    padding-top: 17px;
-    padding-left: 17px;
-
     font-size: 19px;
     line-height: 18px;
     color: rgba(68, 68, 68, 0.3);
   }
 
   .knitting__form textarea:-moz-placeholder {
-    padding-top: 17px;
-    padding-left: 17px;
-
     font-size: 19px;
     line-height: 18px;
     color: rgba(68, 68, 68, 0.3);
   }
 
   .knitting__form textarea:-ms-input-placeholder {
-    padding-top: 17px;
-    padding-left: 17px;
-
     font-size: 19px;
     line-height: 18px;
     color: rgba(68, 68, 68, 0.3);
@@ -571,7 +599,7 @@
 
   .knitting__phone-inner,
   .knitting__email-inner {
-    width: 700px;
+    width: 650px;
 
     position: relative;
   }
@@ -679,6 +707,10 @@
   }
 
   @media (min-width: @desktop-width)  {
+    .knitting {
+      width: 1150px;
+    }
+
     .knitting__inner {
       padding-top: 123px;
     }
@@ -697,8 +729,6 @@
     .knitting__type li {
       margin-left: 255px;
     }
-
-    // knitting__color
 
     .knitting__color .knitting__form-title {
       left: 108px;
@@ -722,8 +752,8 @@
       width: 626px;
     }
 
-    .knitting__personal input[name=middle-name], 
-    .knitting__personal input[name=surname] {
+    .knitting__personal input[name="middle-name"], 
+    .knitting__personal input[name="surname"] {
       width: 573px;
     }
 
