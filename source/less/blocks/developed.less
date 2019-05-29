@@ -1,6 +1,47 @@
+.developed {
+  display: flex;
+
+  position: relative;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .developed__text {
   margin: 0;
+  padding-top: 28px;
+  padding-left: 39px;
 
   font-size: 19px;
   line-height: 18px;
+
+  cursor: pointer;
+}
+
+.developed__academy {
+  position: absolute;
+  top: 22px;
+  right: 39px;
+
+  width: 27px;
+  height: 34px;
+
+  fill: @sea-blue;
+}
+
+.developed__academy:hover {
+  fill: #46c1ae;
+}
+
+@media (min-width: @tablet-width) {
+  .developed__text {
+    padding-top: 10px;
+    padding-left: 0;
+  }
+
+  .developed__academy {
+    top: 6px;
+    right: -54px;
+  }
 }
