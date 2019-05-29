@@ -161,11 +161,11 @@
   border: 2px solid @font-color;
 }
 
-.knitting__form input[type="checkbox"]:hover + label::before{
+.knitting__form input[type="checkbox"]:hover + label::before {
   border: 2px solid @sea-blue;
 }
 
-.knitting__form input[type="checkbox"]:active + label::before{
+.knitting__form input[type="checkbox"]:active + label::before {
   border: 2px solid @font-color;
   opacity: 0.3;
 }
@@ -631,7 +631,7 @@
     position: absolute;
     width: 25px;
     height: 24px;
-    background-image: url(../img/icon-phone.svg);
+    background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
     background-color: inherit;
   }
@@ -640,7 +640,7 @@
     width: 32px;
     height: 28px;
 
-    background-image: url(../img/icon-mail.svg);
+    background-image: url("../img/icon-mail.svg");
   }
 
   .knitting__phone input,
@@ -706,7 +706,7 @@
     margin-right: auto;
   }
 
-  @media (min-width: @desktop-width)  {
+  @media (min-width: @desktop-width) {
     .knitting {
       width: 1150px;
     }
@@ -720,12 +720,10 @@
       padding-left: 225px;
     }
 
-    // knitting__type
-
     .knitting__type .knitting__form-title {
       padding-left: 60px;
     }
-    
+
     .knitting__type li {
       margin-left: 255px;
     }
@@ -748,11 +746,11 @@
       margin-left: 178px;
     }
 
-    .knitting__personal input[name=name] {
+    .knitting__personal input[name="name"] {
       width: 626px;
     }
 
-    .knitting__personal input[name="middle-name"], 
+    .knitting__personal input[name="middle-name"],
     .knitting__personal input[name="surname"] {
       width: 573px;
     }
@@ -771,7 +769,7 @@
       margin-left: 175px;
     }
 
-    .knitting__email-inner::before, 
+    .knitting__email-inner::before,
     .knitting__phone-inner::before {
       right: -166px;
     }
@@ -798,6 +796,5 @@
     .knitting__info {
       width: 1150px;
     }
-
   }
 }
