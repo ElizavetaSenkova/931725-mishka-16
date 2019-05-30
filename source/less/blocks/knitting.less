@@ -34,6 +34,8 @@
 }
 
 .knitting__form-title {
+  margin: 0;
+
   font-size: 17px;
   font-weight: bold;
   color: @sea-blue;
@@ -454,7 +456,7 @@
   }
 
   .knitting__color ul {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     padding-top: 66px;
   }
@@ -462,6 +464,8 @@
   .knitting__color .knitting__item {
     margin-bottom: 55px;
     margin-left: 248px;
+    display: inline-block;
+    max-width: 33%;
   }
 
   .knitting__color label {
